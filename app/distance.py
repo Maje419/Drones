@@ -1,8 +1,9 @@
 from math import sin, sqrt, asin, cos, radians
 from typing import Tuple
 
-def distance(a, b): 
-    return ((a[0] - b[0]) ** 2 + (a[1] - b[1]) ** 2) ** 0.5 
+
+def distance(a, b):
+    return ((a[0] - b[0]) ** 2 + (a[1] - b[1]) ** 2) ** 0.5
 
 
 def haversine(p1: Tuple[float, float], p2: Tuple[float, float]):
@@ -17,7 +18,7 @@ def haversine(p1: Tuple[float, float], p2: Tuple[float, float]):
 
     :return: Distance: in meters
 
-    # 
+    #
     """
     lon1 = p1[0]
     lat1 = p1[1]
