@@ -5,7 +5,7 @@ from mavsdk.mission import MissionItem, MissionPlan
 
 from mast_calculations import get_closest_masts
 
-MAST_HEIGHT = 30 #meters relative to starting position of drone
+MAST_HEIGHT = 30        #meters relative to starting position of drone
 
 async def run(entry_point: Tuple[float, float]):
     drone = System()
@@ -19,7 +19,7 @@ async def run(entry_point: Tuple[float, float]):
 
     print_mission_progress_task = asyncio.ensure_future(print_mission_progress(drone))
 
-    closest_masts = get_closest_masts(entry_point)  #Should be received from the base-station in real setup
+    closest_masts = get_closest_masts(entry_point)              #Should be received from the base-station in real setup
 
     await drone.param.set_param_float("MIS_DIST_1WP", 5000)
     await drone.param.set_param_float("MIS_DIST_WPS", 5000)
