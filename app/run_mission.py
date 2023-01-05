@@ -1,21 +1,25 @@
 import asyncio
-import time
 from typing import List, Tuple
 import threading
 from mavsdk import System
 from mavsdk.mission import MissionItem, MissionPlan
-import logging
-import sys
 from mast_calculations import get_closest_masts
 from Video import Video
+from keras.applications.vgg16 import VGG16, preprocess_input, decode_predictions
+from keras.utils.image_utils import img_to_array, load_img
+import time
 
 # Image stuff
 from PIL import Image
 
-MAST_HEIGHT = 5  # Relative height of old mast to starting position of drone (meters)
+MAST_HEIGHT = 30  # Relative height of old mast to starting position of drone (meters)
 ACCEPTANCE_RADIUS = 5  # How close should the drone be to the mast before the mission is a success (meters)
 
 video = Video()
+
+time_start = time.time()
+
+model = VGG16()
 
 # Initialize thread-safe variables
 obstacle_avoidance_triggered = threading.Event()
@@ -138,13 +142,15 @@ async def run(entry_point: Tuple[float, float]):
             is_finished = await drone.mission.is_mission_finished()
             await asyncio.sleep(1)
         i += 1
-        print(f"-- Mission finished. Line of sight confirmed to mast: {has_found_mast}")
+        print(
+            f"-- Mission finished. Line of sight confirmed to mast: {has_found_mast.is_set()}"
+        )
         is_returning.clear()
 
 
 async def monitor_distance(drone: System):
     async for distance in drone.telemetry.distance_sensor():
-        print(distance)
+        # print(distance)
         if (
             distance.current_distance_m < 250
             and not await drone.mission.is_mission_finished()
@@ -158,6 +164,7 @@ async def do_mast_recognition():
     print("Mast recognition called")
     print("Has Found Mast: " + str(has_found_mast.is_set()))
     while not has_found_mast.is_set():
+        print("Enter has_found loop")
         if not is_returning.is_set():
             # Capture image every 5 seconds to analyze
             print("-- Taking image")
@@ -170,16 +177,33 @@ async def do_mast_recognition():
                 img = video.frame()
             print("-- Took image")
             im = Image.fromarray(img[:, :, ::-1])
+            im = im.resize((224, 224))
             im.save(f"images/second_{i}.jpeg")
-            if image_contains_mast(im):
+            if image_contains_mast(img_to_array(im)):
                 has_found_mast.set()
-
+                print("Mast found! Returning to base.")
+            print("Did mast check")
             await asyncio.sleep(5)
             i += 1
+    print("Exiting mast recognition task")
 
 
 def image_contains_mast(im):
-    return False
+    print("-- image_contains_mast called")
+    image = im.reshape((1, im.shape[0], im.shape[1], im.shape[2]))
+    print("1")
+    image = preprocess_input(image)
+    print("2")
+    pred = model.predict(image)
+    print("3")
+    label = decode_predictions(pred)
+    print("4")
+    label = label[0][0]
+    print(
+        " -- image_contains_mast returned "
+        + str(label[1] == "balloon" and label[2] >= 0.90)
+    )
+    return label[1] == "balloon" and label[2] >= 0.90
 
 
 async def print_mission_progress(drone):
