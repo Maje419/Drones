@@ -1,0 +1,13 @@
+train: ../dtrain/images
+val: ../dvalid/images
+test: ../dtest/images
+
+nc: 1
+names: ['hotair-baloon']
+
+roboflow:
+  workspace: drones-t9ng9
+  project: hotair
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/drones-t9ng9/hotair/dataset/2
