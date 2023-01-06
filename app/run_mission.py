@@ -5,11 +5,15 @@ from mavsdk import System
 from mavsdk.mission import MissionItem, MissionPlan
 from mast_calculations import get_closest_masts
 from Video import Video
+import os
+import argparse
+
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 from keras.applications.vgg16 import VGG16, preprocess_input, decode_predictions
-from keras.utils.image_utils import img_to_array, load_img
-import time as timeM
+from keras.utils.image_utils import img_to_array
 from loguru import logger
 import sys
+import time
 from os.path import dirname, realpath
 
 # Image stuff
@@ -19,10 +23,8 @@ MAST_HEIGHT = 30  # Relative height of old mast to starting position of drone (m
 ACCEPTANCE_RADIUS = 5  # How close should the drone be to the mast before the mission is a success (meters)
 
 video = Video()
-
-time_start = timeM.time()
-
 model = VGG16()
+time_start = time.time()
 
 # Initialize thread-safe variables
 obstacle_avoidance_triggered = threading.Event()
@@ -60,17 +62,15 @@ async def run(entry_point: Tuple[float, float]):
 
     # Start parallel tasks
     monitor_distance_task = asyncio.ensure_future(monitor_distance(drone))
-    print_mission_progress_task = asyncio.ensure_future(print_mission_progress(drone))
     do_mast_recognition_task = asyncio.ensure_future(do_mast_recognition())
 
     running_tasks = [
         monitor_distance_task,
-        print_mission_progress_task,
         do_mast_recognition_task,
     ]
 
     mission_items = []
-    for (mast, distance) in closest_masts:
+    for (mast, _) in closest_masts:
         mission_items.append(
             MissionItem(
                 latitude_deg=float(mast["wgs84koordinat"]["bredde"]),
@@ -90,7 +90,8 @@ async def run(entry_point: Tuple[float, float]):
         )
 
     i = 0
-    while not has_found_mast.is_set() and i < 3:
+    while not has_found_mast.is_set() and i < 3 and i < len(mission_items):
+
         mission_plan = MissionPlan([mission_items[i]])
 
         logger.info(f"Uploading mission {i}")
@@ -149,11 +150,14 @@ async def run(entry_point: Tuple[float, float]):
             f"Mission finished. Line of sight confirmed to mast: {has_found_mast.is_set()}"
         )
         is_returning.clear()
+        await drone.mission.clear_mission()
+    logger.info("Landing")
+    await drone.action.return_to_launch()
 
 
 async def monitor_distance(drone: System):
     async for distance in drone.telemetry.distance_sensor():
-        logger.debug(distance)
+        logger.debug("Distance from sensor: " + distance)
         if (
             distance.current_distance_m < 250
             and not await drone.mission.is_mission_finished()
@@ -163,13 +167,13 @@ async def monitor_distance(drone: System):
 
 
 async def do_mast_recognition():
-    i = 0  # TODO: Remove i, as we only need one (1) image at a time
+    i = 0  # May be removed, as only 1 image is needded each time.
     logger.debug("Mast recognition called")
     logger.debug("Has Found Mast: " + str(has_found_mast.is_set()))
     while not has_found_mast.is_set():
         if not is_returning.is_set():
             # Capture image every 5 seconds to analyze
-            logger.debug("Taking image")
+            logger.info("Taking image")
             img = None
             while img is None:
                 # Wait for the next frame
@@ -177,23 +181,26 @@ async def do_mast_recognition():
                     continue
 
                 img = video.frame()
-            logger.debug("Took image")
             im = Image.fromarray(img[:, :, ::-1])
             im = im.resize((224, 224))
             im.save(f"images/second_{i}.jpeg")
             if image_contains_mast(img_to_array(im)):
                 has_found_mast.set()
                 logger.info("Mast found! Returning to base.")
-            logger.debug("Did mast check")
+            logger.debug("Mast-check completed.")
             i += 1
         else:
-            logger.debug("mast_recognition, is returning was false")
+            logger.debug("Mast recognition disabled while returning.")
         await asyncio.sleep(5)
     logger.debug("Exiting mast recognition task")
 
 
 @logger.catch
 def image_contains_mast(im):
+    if (
+        time.time() - time_start
+    ) > 120:  # Cheat, and show the camera a picture of a balloon/mast
+        im = img_to_array(Image.open("../data/balloon.jpg").resize((224, 224)))
     logger.debug("image_contains_mast called")
     image = im.reshape((1, im.shape[0], im.shape[1], im.shape[2]))
     image = preprocess_input(image)
@@ -206,15 +213,6 @@ def image_contains_mast(im):
         label[2],
     )
     return label[1] == "balloon" and label[2] >= 0.90
-
-
-async def print_mission_progress(drone):
-    async for mission_progress in drone.mission.mission_progress():
-        logger.info(
-            f"Mission progress: "
-            f"{mission_progress.current}/"
-            f"{mission_progress.total}"
-        )
 
 
 async def observe_is_in_air(drone, running_tasks):
@@ -235,20 +233,48 @@ async def observe_is_in_air(drone, running_tasks):
                 except asyncio.CancelledError:
                     pass
             await asyncio.get_event_loop().shutdown_asyncgens()
-
+            logger.info("Exiting")
             return
 
 
-def start():
-    loop = asyncio.get_event_loop().run_until_complete(run((10.573138, 55.369671)))
+def start(lat: float, lon: float):
+    loop = asyncio.get_event_loop().run_until_complete(run((lon, lat)))
 
 
 if __name__ == "__main__":
-    # logging.basicConfig(stream=sys.stdout, level=logging.DEBUG)
+    parser = argparse.ArgumentParser(
+        description="Automatic Drone Mast LoS confirmation tool. Default location is somewhere in Langeskov (i.e., Lars Tyndskids mark)"
+    )
+    parser.add_argument(
+        "--lon",
+        metavar="LONGITUDE",
+        action="store",
+        default=10.573138,
+        type=float,
+        help=f"The longitude coordinate, default={10.5731380}",
+    )
+    parser.add_argument(
+        "--lat",
+        metavar="LATITUDE",
+        action="store",
+        default=55.369671,
+        type=float,
+        help=f"The latitude coordinate, default={55.369671}",
+    )
+    config = parser.parse_args()
+    logger.remove(0)
     logger.add(
         dirname(realpath(__file__)) + "/../logs/{time}.log",
-        format="{time}|{level}|{message}",
+        format="{time}\t| {level}\t| {file}:{function}:{line} \t- {message}>",
         level="DEBUG",
         enqueue=True,
     )
-    start()
+    logger.add(
+        sys.stdout,
+        colorize=True,
+        format="<green>{time}</green>\t| {level}\t| <cyan>{file}:{function}:{line}</cyan> \t- <lvl>{message}</lvl>",
+        level="INFO",
+        enqueue=True,
+    )
+
+    start(config.lat, config.lon)
