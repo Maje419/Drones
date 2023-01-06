@@ -4,7 +4,7 @@ from keras.utils.image_utils import img_to_array, load_img
 model = VGG16()
 
 image = load_img(
-    "./images/second_7.jpeg",
+    "./images/second_45.jpeg",
     target_size=(224, 224),
 )
 

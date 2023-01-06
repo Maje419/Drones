@@ -7,7 +7,10 @@ from mast_calculations import get_closest_masts
 from Video import Video
 from keras.applications.vgg16 import VGG16, preprocess_input, decode_predictions
 from keras.utils.image_utils import img_to_array, load_img
-import time
+import time as timeM
+from loguru import logger
+import sys
+from os.path import dirname, realpath
 
 # Image stuff
 from PIL import Image
@@ -17,7 +20,7 @@ ACCEPTANCE_RADIUS = 5  # How close should the drone be to the mast before the mi
 
 video = Video()
 
-time_start = time.time()
+time_start = timeM.time()
 
 model = VGG16()
 
@@ -35,16 +38,16 @@ async def run(entry_point: Tuple[float, float]):
     )  # Should be received from the base-station in real setup
     await drone.connect(system_address="udp://:14540")
 
-    print("Waiting for drone to connect...")
+    logger.info("Waiting for drone to connect...")
     async for state in drone.core.connection_state():
         if state.is_connected:
-            print(f"-- Connected to drone!")
+            logger.info(f"Connected to drone!")
             break
 
-    print("Waiting for drone to have a global position estimate...")
+    logger.info("Waiting for drone to have a global position estimate...")
     async for health in drone.telemetry.health():
         if health.is_global_position_ok and health.is_home_position_ok:
-            print("-- Global position estimate OK")
+            logger.info("Global position estimate OK")
             break
 
     # Configure the drone parameters
@@ -52,7 +55,7 @@ async def run(entry_point: Tuple[float, float]):
     await drone.param.set_param_float("MIS_DIST_WPS", 5000)
     await drone.mission.set_return_to_launch_after_mission(False)
 
-    print("-- Arming")
+    logger.info("Arming")
     await drone.action.arm()
 
     # Start parallel tasks
@@ -73,9 +76,9 @@ async def run(entry_point: Tuple[float, float]):
                 latitude_deg=float(mast["wgs84koordinat"]["bredde"]),
                 longitude_deg=float(mast["wgs84koordinat"]["laengde"]),
                 relative_altitude_m=MAST_HEIGHT,
-                speed_m_s=5,
+                speed_m_s=3,
                 is_fly_through=False,
-                gimbal_pitch_deg=float("nan"),
+                gimbal_pitch_deg=45,
                 gimbal_yaw_deg=float("nan"),
                 camera_action=MissionItem.CameraAction.NONE,
                 loiter_time_s=float("nan"),
@@ -90,27 +93,27 @@ async def run(entry_point: Tuple[float, float]):
     while not has_found_mast.is_set() and i < 3:
         mission_plan = MissionPlan([mission_items[i]])
 
-        print(f"-- Uploading mission {i}")
+        logger.info(f"Uploading mission {i}")
         await drone.mission.upload_mission(mission_plan)
 
         await asyncio.sleep(1)
 
-        print("-- Starting mission")
+        logger.info("Starting mission")
         await drone.mission.start_mission()
 
-        print(
-            f"-- Now checking mast {closest_masts[i][0]['unik_station_navn']} at {closest_masts[i][0]['wgs84koordinat']['laengde']}, {closest_masts[i][0]['wgs84koordinat']['bredde']}"
+        logger.info(
+            f"Now checking mast {closest_masts[i][0]['unik_station_navn']} at {closest_masts[i][0]['wgs84koordinat']['laengde']}, {closest_masts[i][0]['wgs84koordinat']['bredde']}"
         )
 
         while not has_found_mast.is_set() and not obstacle_avoidance_triggered.is_set():
             await asyncio.sleep(1)
 
         if obstacle_avoidance_triggered.is_set():
-            print("-- Clearing current mission")
+            logger.info("Clearing current mission")
             await drone.mission.pause_mission()
             await drone.mission.clear_mission()
 
-        print("-- Returning to base")
+        logger.info("Returning to base")
         is_returning.set()
         obstacle_avoidance_triggered.clear()
         await drone.mission.clear_mission()
@@ -121,7 +124,7 @@ async def run(entry_point: Tuple[float, float]):
                         float(entry_point[1]),
                         float(entry_point[0]),
                         MAST_HEIGHT,
-                        5,
+                        3,
                         False,
                         float("nan"),
                         float("nan"),
@@ -142,32 +145,31 @@ async def run(entry_point: Tuple[float, float]):
             is_finished = await drone.mission.is_mission_finished()
             await asyncio.sleep(1)
         i += 1
-        print(
-            f"-- Mission finished. Line of sight confirmed to mast: {has_found_mast.is_set()}"
+        logger.info(
+            f"Mission finished. Line of sight confirmed to mast: {has_found_mast.is_set()}"
         )
         is_returning.clear()
 
 
 async def monitor_distance(drone: System):
     async for distance in drone.telemetry.distance_sensor():
-        # print(distance)
+        logger.debug(distance)
         if (
             distance.current_distance_m < 250
             and not await drone.mission.is_mission_finished()
         ):
             obstacle_avoidance_triggered.set()
-            print(f"Obstacle identified, line of sight cannot be confirmed.")
+            logger.info(f"Obstacle identified, line of sight cannot be confirmed.")
 
 
 async def do_mast_recognition():
     i = 0  # TODO: Remove i, as we only need one (1) image at a time
-    print("Mast recognition called")
-    print("Has Found Mast: " + str(has_found_mast.is_set()))
+    logger.debug("Mast recognition called")
+    logger.debug("Has Found Mast: " + str(has_found_mast.is_set()))
     while not has_found_mast.is_set():
-        print("Enter has_found loop")
         if not is_returning.is_set():
             # Capture image every 5 seconds to analyze
-            print("-- Taking image")
+            logger.debug("Taking image")
             img = None
             while img is None:
                 # Wait for the next frame
@@ -175,40 +177,40 @@ async def do_mast_recognition():
                     continue
 
                 img = video.frame()
-            print("-- Took image")
+            logger.debug("Took image")
             im = Image.fromarray(img[:, :, ::-1])
             im = im.resize((224, 224))
             im.save(f"images/second_{i}.jpeg")
             if image_contains_mast(img_to_array(im)):
                 has_found_mast.set()
-                print("Mast found! Returning to base.")
-            print("Did mast check")
-            await asyncio.sleep(5)
+                logger.info("Mast found! Returning to base.")
+            logger.debug("Did mast check")
             i += 1
-    print("Exiting mast recognition task")
+        else:
+            logger.debug("mast_recognition, is returning was false")
+        await asyncio.sleep(5)
+    logger.debug("Exiting mast recognition task")
 
 
+@logger.catch
 def image_contains_mast(im):
-    print("-- image_contains_mast called")
+    logger.debug("image_contains_mast called")
     image = im.reshape((1, im.shape[0], im.shape[1], im.shape[2]))
-    print("1")
     image = preprocess_input(image)
-    print("2")
     pred = model.predict(image)
-    print("3")
     label = decode_predictions(pred)
-    print("4")
     label = label[0][0]
-    print(
-        " -- image_contains_mast returned "
-        + str(label[1] == "balloon" and label[2] >= 0.90)
+    logger.debug(
+        "image_contains_mast returned {}, confidence: {}",
+        label[1] == "balloon" and label[2] >= 0.90,
+        label[2],
     )
     return label[1] == "balloon" and label[2] >= 0.90
 
 
 async def print_mission_progress(drone):
     async for mission_progress in drone.mission.mission_progress():
-        print(
+        logger.info(
             f"Mission progress: "
             f"{mission_progress.current}/"
             f"{mission_progress.total}"
@@ -243,4 +245,10 @@ def start():
 
 if __name__ == "__main__":
     # logging.basicConfig(stream=sys.stdout, level=logging.DEBUG)
+    logger.add(
+        dirname(realpath(__file__)) + "/../logs/{time}.log",
+        format="{time}|{level}|{message}",
+        level="DEBUG",
+        enqueue=True,
+    )
     start()
