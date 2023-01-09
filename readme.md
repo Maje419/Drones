@@ -11,7 +11,9 @@ You will need to change the `PX4_HOME_LAT` and `PX4_HOME_LON` environment variab
 ### Terminal 1 - `PX4`
 Make sure to source the `setup.env` file before running the make command. 
 
-Assuming you are in the directory with `PX4` installed, you need to run the command `make ..`
+Assuming you are in the directory with `PX4` installed, you need to run the command `make px4_sitl gazebo_typhoon_h480__mcmillan_airfield`
+
+Note that `__mcmillan_airfield` is optional, but it provides a more realistic environment with hills/mountains.
 
 ### Terminal 2 - `QGroundControl` (Optional)
 Run the `QGroundControl.AppImage` file
