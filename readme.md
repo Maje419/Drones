@@ -19,7 +19,7 @@ Note that `__mcmillan_airfield` is optional, but it provides a more realistic en
 Run the `QGroundControl.AppImage` file
 
 ### Terminal 3 - `VeLOS`
-Run `python run_mission.py --lon <LONGITUDE> --lat <LATITUDE>` to start the mission. You should be able to see the drone taking off in the Gazebo window shortly.
+Run `python app/run_mission.py --lon <LONGITUDE> --lat <LATITUDE>` to start the mission. You should be able to see the drone taking off in the Gazebo window shortly.
 
 If you don't specify any parameters to `run_mission.py`, it will use the default coordinates (that matches the default coordinates from setup.env), as specified in the help command:
 ```bash
