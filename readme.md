@@ -6,7 +6,7 @@ You will need two (required) or three (optional) terminal windows to start the d
 
 
 ### Setting up the environment
-You will need to change the `PX4_HOME_LAT` and `PX4_HOME_LON`
+You will need to change the `PX4_HOME_LAT` and `PX4_HOME_LON` environment variables to your desired location, before running `VeLOS` with that location. Otherwise the drone will not be taking off from the location that it calculated distances from, and LoS will not be able to be confirmed.
 
 ### Terminal 1 - `PX4`
 Make sure to source the `setup.env` file before running the make command. 
