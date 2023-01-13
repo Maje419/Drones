@@ -1,0 +1,445 @@
+2023-01-13T10:18:12.146850+0100	| INFO	| run_mission.py:run:44 	- Waiting for drone to connect...>
+2023-01-13T10:18:12.156516+0100	| INFO	| run_mission.py:run:47 	- Connected to drone!>
+2023-01-13T10:18:12.157949+0100	| INFO	| run_mission.py:run:50 	- Waiting for drone to have a global position estimate...>
+2023-01-13T10:18:25.092411+0100	| INFO	| run_mission.py:run:53 	- Global position estimate OK>
+2023-01-13T10:18:25.151349+0100	| INFO	| run_mission.py:run:61 	- Arming>
+2023-01-13T10:18:25.232898+0100	| INFO	| run_mission.py:run:100 	- Uploading mission 0>
+2023-01-13T10:18:25.237240+0100	| DEBUG	| run_mission.py:monitor_distance:162 	- Distance monitoring enabled>
+2023-01-13T10:18:25.239904+0100	| DEBUG	| run_mission.py:do_mast_recognition:187 	- Mast recognition called>
+2023-01-13T10:18:25.240296+0100	| DEBUG	| run_mission.py:do_mast_recognition:188 	- Has Found Mast: False>
+2023-01-13T10:18:25.240441+0100	| DEBUG	| run_mission.py:do_mast_recognition:209 	- Mast recognition disabled while returning or taking off.>
+2023-01-13T10:18:25.240754+0100	| DEBUG	| run_mission.py:monitor_altitude:176 	- Altitude monitoring enabled>
+2023-01-13T10:18:25.677586+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 421.0]>
+2023-01-13T10:18:26.145086+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 421.0]>
+2023-01-13T10:18:26.266742+0100	| INFO	| run_mission.py:run:105 	- Starting mission>
+2023-01-13T10:18:26.378510+0100	| INFO	| run_mission.py:run:108 	- Now checking mast F2542G at 10.554784917159, 55.3743128282325>
+2023-01-13T10:18:26.531085+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 421.0]>
+2023-01-13T10:18:26.615667+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 421.0]>
+2023-01-13T10:18:26.898337+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 421.0]>
+2023-01-13T10:18:27.267887+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 421.0]>
+2023-01-13T10:18:27.370073+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 421.0]>
+2023-01-13T10:18:27.671866+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 421.0]>
+2023-01-13T10:18:28.444822+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 421.0]>
+2023-01-13T10:18:28.822442+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 421.0]>
+2023-01-13T10:18:29.198886+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 421.0]>
+2023-01-13T10:18:29.474895+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 421.0]>
+2023-01-13T10:18:29.577164+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 421.0]>
+2023-01-13T10:18:30.241513+0100	| DEBUG	| run_mission.py:do_mast_recognition:209 	- Mast recognition disabled while returning or taking off.>
+2023-01-13T10:18:30.257238+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 421.0]>
+2023-01-13T10:18:30.522657+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 421.0]>
+2023-01-13T10:18:30.899795+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 421.0]>
+2023-01-13T10:18:31.192037+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 421.0]>
+2023-01-13T10:18:32.459759+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 421.0]>
+2023-01-13T10:18:32.864039+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 421.0]>
+2023-01-13T10:18:33.357962+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 421.0]>
+2023-01-13T10:18:33.838118+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 421.0]>
+2023-01-13T10:18:34.711463+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 421.0]>
+2023-01-13T10:18:35.089283+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 421.0]>
+2023-01-13T10:18:35.243959+0100	| DEBUG	| run_mission.py:do_mast_recognition:209 	- Mast recognition disabled while returning or taking off.>
+2023-01-13T10:18:35.366189+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 419.0]>
+2023-01-13T10:18:35.638872+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 419.0]>
+2023-01-13T10:18:36.317379+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 419.0]>
+2023-01-13T10:18:36.707081+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 419.0]>
+2023-01-13T10:18:37.095275+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 419.0]>
+2023-01-13T10:18:37.782057+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 419.0]>
+2023-01-13T10:18:38.254539+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 419.0]>
+2023-01-13T10:18:38.437594+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 419.0]>
+2023-01-13T10:18:38.912335+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 411.0]>
+2023-01-13T10:18:39.361476+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 414.0]>
+2023-01-13T10:18:39.869774+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 416.0]>
+2023-01-13T10:18:40.165567+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 417.0]>
+2023-01-13T10:18:40.245877+0100	| DEBUG	| run_mission.py:do_mast_recognition:209 	- Mast recognition disabled while returning or taking off.>
+2023-01-13T10:18:40.550981+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 423.0]>
+2023-01-13T10:18:41.317655+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 421.0]>
+2023-01-13T10:18:42.001027+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 419.0]>
+2023-01-13T10:18:42.567623+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 419.0]>
+2023-01-13T10:18:43.131323+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 421.0]>
+2023-01-13T10:18:43.398944+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 425.0]>
+2023-01-13T10:18:43.774462+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 431.0]>
+2023-01-13T10:18:44.448004+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 433.0]>
+2023-01-13T10:18:44.837811+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 441.0]>
+2023-01-13T10:18:45.220696+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 446.0]>
+2023-01-13T10:18:45.249130+0100	| DEBUG	| run_mission.py:do_mast_recognition:209 	- Mast recognition disabled while returning or taking off.>
+2023-01-13T10:18:45.590984+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 454.0]>
+2023-01-13T10:18:46.092990+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 464.0]>
+2023-01-13T10:18:46.693343+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 473.0]>
+2023-01-13T10:18:47.070282+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 483.0]>
+2023-01-13T10:18:47.650687+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 496.0]>
+2023-01-13T10:18:48.519338+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:18:48.907220+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:18:49.294097+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:18:49.490873+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:18:50.096092+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:18:50.252212+0100	| DEBUG	| run_mission.py:do_mast_recognition:209 	- Mast recognition disabled while returning or taking off.>
+2023-01-13T10:18:50.879897+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:18:51.399070+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:18:51.605925+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:18:51.898806+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:18:52.196389+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:18:52.690576+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:18:52.887404+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:18:53.457798+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:18:54.037095+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:18:54.712183+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:18:55.254428+0100	| DEBUG	| run_mission.py:do_mast_recognition:209 	- Mast recognition disabled while returning or taking off.>
+2023-01-13T10:18:55.306794+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:18:55.797074+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:18:56.189946+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:18:56.671128+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:18:56.958130+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:18:57.439577+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:18:57.715643+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:18:58.218850+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:18:58.608553+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:18:58.919815+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:18:59.224040+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:18:59.618185+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:00.112126+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:00.257917+0100	| DEBUG	| run_mission.py:do_mast_recognition:209 	- Mast recognition disabled while returning or taking off.>
+2023-01-13T10:19:00.698370+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:01.578445+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:01.675876+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:02.367998+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:03.053354+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:03.659514+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:04.144719+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:04.633478+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:05.110418+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:05.259881+0100	| DEBUG	| run_mission.py:do_mast_recognition:209 	- Mast recognition disabled while returning or taking off.>
+2023-01-13T10:19:05.589476+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:05.994867+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:06.274040+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:06.448755+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:06.556166+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:07.051918+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:07.434705+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:07.829918+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:08.042029+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:08.510691+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:09.032969+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:09.715373+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:10.128604+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:10.261851+0100	| DEBUG	| run_mission.py:do_mast_recognition:209 	- Mast recognition disabled while returning or taking off.>
+2023-01-13T10:19:10.515313+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:11.121244+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:11.511349+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:12.001945+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:12.406941+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:12.707143+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:13.117388+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:13.511179+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:14.599951+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:15.086484+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:15.264549+0100	| DEBUG	| run_mission.py:do_mast_recognition:209 	- Mast recognition disabled while returning or taking off.>
+2023-01-13T10:19:15.461451+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:15.862297+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:16.255832+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:16.797052+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:17.156681+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:17.846417+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:18.482406+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:18.877308+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:19.288923+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:19.617274+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:20.047738+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:20.225641+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:20.265989+0100	| DEBUG	| run_mission.py:do_mast_recognition:209 	- Mast recognition disabled while returning or taking off.>
+2023-01-13T10:19:20.812949+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:21.658640+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:22.152684+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:22.652706+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:23.250390+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:23.654090+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:24.023437+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:24.665383+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:25.268121+0100	| DEBUG	| run_mission.py:do_mast_recognition:209 	- Mast recognition disabled while returning or taking off.>
+2023-01-13T10:19:25.368142+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:25.771958+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:26.011589+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:26.273607+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:26.589875+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:26.806019+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:27.057893+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:27.312262+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:27.560728+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:27.715033+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:28.317278+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:28.512713+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:29.209175+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:29.498212+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:29.812590+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:29.989586+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:30.143492+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:30.270599+0100	| DEBUG	| run_mission.py:do_mast_recognition:209 	- Mast recognition disabled while returning or taking off.>
+2023-01-13T10:19:30.491293+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:30.843833+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:31.225293+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:31.942869+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:32.228223+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:32.767281+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:32.941712+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:33.240840+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:33.765248+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:34.233879+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:34.650174+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:35.243804+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:35.272281+0100	| DEBUG	| run_mission.py:do_mast_recognition:209 	- Mast recognition disabled while returning or taking off.>
+2023-01-13T10:19:36.288518+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:36.850146+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:37.282776+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:38.113502+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:38.643199+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 500.0]>
+2023-01-13T10:19:38.946428+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 496.0]>
+2023-01-13T10:19:39.560629+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 491.0]>
+2023-01-13T10:19:39.762100+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 487.0]>
+2023-01-13T10:19:39.894147+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 483.0]>
+2023-01-13T10:19:40.118147+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 479.0]>
+2023-01-13T10:19:40.274019+0100	| DEBUG	| run_mission.py:do_mast_recognition:209 	- Mast recognition disabled while returning or taking off.>
+2023-01-13T10:19:40.626162+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 473.0]>
+2023-01-13T10:19:41.202721+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 471.0]>
+2023-01-13T10:19:41.690041+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 466.0]>
+2023-01-13T10:19:42.083784+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 463.0]>
+2023-01-13T10:19:42.363373+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 458.0]>
+2023-01-13T10:19:42.855448+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 456.0]>
+2023-01-13T10:19:43.248836+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 452.0]>
+2023-01-13T10:19:43.534090+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 448.0]>
+2023-01-13T10:19:43.922757+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 444.0]>
+2023-01-13T10:19:44.593886+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 440.0]>
+2023-01-13T10:19:45.276392+0100	| DEBUG	| run_mission.py:do_mast_recognition:209 	- Mast recognition disabled while returning or taking off.>
+2023-01-13T10:19:45.278396+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 436.0]>
+2023-01-13T10:19:45.868840+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 431.0]>
+2023-01-13T10:19:46.272997+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 427.0]>
+2023-01-13T10:19:46.978951+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 423.0]>
+2023-01-13T10:19:47.472119+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 419.0]>
+2023-01-13T10:19:47.974763+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 415.0]>
+2023-01-13T10:19:48.435273+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 413.0]>
+2023-01-13T10:19:48.836950+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 408.0]>
+2023-01-13T10:19:49.158066+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 404.0]>
+2023-01-13T10:19:49.740357+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 404.0]>
+2023-01-13T10:19:50.169333+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 399.0]>
+2023-01-13T10:19:50.278415+0100	| DEBUG	| run_mission.py:do_mast_recognition:209 	- Mast recognition disabled while returning or taking off.>
+2023-01-13T10:19:50.676993+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 387.0]>
+2023-01-13T10:19:51.096286+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 383.0]>
+2023-01-13T10:19:51.374421+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 388.0]>
+2023-01-13T10:19:51.932964+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 379.0]>
+2023-01-13T10:19:52.248437+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 369.0]>
+2023-01-13T10:19:52.732536+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 373.0]>
+2023-01-13T10:19:53.053461+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 366.0]>
+2023-01-13T10:19:53.459871+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 358.0]>
+2023-01-13T10:19:54.059518+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 349.0]>
+2023-01-13T10:19:54.436209+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 347.0]>
+2023-01-13T10:19:55.063597+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 338.0]>
+2023-01-13T10:19:55.280469+0100	| DEBUG	| run_mission.py:do_mast_recognition:209 	- Mast recognition disabled while returning or taking off.>
+2023-01-13T10:19:55.342475+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 330.0]>
+2023-01-13T10:19:55.816262+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 322.0]>
+2023-01-13T10:19:56.292604+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 313.0]>
+2023-01-13T10:19:56.980429+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 304.0]>
+2023-01-13T10:19:57.456040+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 296.0]>
+2023-01-13T10:19:57.967394+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 288.0]>
+2023-01-13T10:19:58.207338+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 279.0]>
+2023-01-13T10:19:58.405015+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 271.0]>
+2023-01-13T10:19:58.601018+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 263.0]>
+2023-01-13T10:19:59.479287+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 254.0]>
+2023-01-13T10:20:00.283321+0100	| DEBUG	| run_mission.py:do_mast_recognition:209 	- Mast recognition disabled while returning or taking off.>
+2023-01-13T10:20:00.374046+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 246.0]>
+2023-01-13T10:20:00.771354+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 241.0]>
+2023-01-13T10:20:01.592259+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 232.0]>
+2023-01-13T10:20:02.180478+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 225.0]>
+2023-01-13T10:20:02.257883+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 218.0]>
+2023-01-13T10:20:02.690836+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 209.0]>
+2023-01-13T10:20:03.037311+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 201.0]>
+2023-01-13T10:20:03.856107+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 191.0]>
+2023-01-13T10:20:04.224389+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 184.0]>
+2023-01-13T10:20:04.328586+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 180.0]>
+2023-01-13T10:20:05.023712+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 174.0]>
+2023-01-13T10:20:05.285715+0100	| DEBUG	| run_mission.py:do_mast_recognition:209 	- Mast recognition disabled while returning or taking off.>
+2023-01-13T10:20:05.290232+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 167.0]>
+2023-01-13T10:20:05.765173+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 159.0]>
+2023-01-13T10:20:05.857565+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 157.0]>
+2023-01-13T10:20:06.046455+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 150.0]>
+2023-01-13T10:20:06.262755+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 145.0]>
+2023-01-13T10:20:06.936110+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 138.0]>
+2023-01-13T10:20:07.486461+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 132.0]>
+2023-01-13T10:20:08.295001+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 52.0]>
+2023-01-13T10:20:08.593047+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 61.0]>
+2023-01-13T10:20:08.779080+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 88.0]>
+2023-01-13T10:20:09.253997+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 156.0]>
+2023-01-13T10:20:09.630286+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 289.0]>
+2023-01-13T10:20:10.289004+0100	| DEBUG	| run_mission.py:do_mast_recognition:209 	- Mast recognition disabled while returning or taking off.>
+2023-01-13T10:20:10.595109+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 391.0]>
+2023-01-13T10:20:10.876312+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 391.0]>
+2023-01-13T10:20:11.350477+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 373.0]>
+2023-01-13T10:20:11.440640+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 355.0]>
+2023-01-13T10:20:11.929569+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 355.0]>
+2023-01-13T10:20:12.503311+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 366.0]>
+2023-01-13T10:20:12.980352+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 375.0]>
+2023-01-13T10:20:13.349149+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 379.0]>
+2023-01-13T10:20:13.762616+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 376.0]>
+2023-01-13T10:20:14.234755+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 377.0]>
+2023-01-13T10:20:15.224258+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 376.0]>
+2023-01-13T10:20:15.290549+0100	| DEBUG	| run_mission.py:do_mast_recognition:209 	- Mast recognition disabled while returning or taking off.>
+2023-01-13T10:20:15.723301+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 375.0]>
+2023-01-13T10:20:16.077583+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 376.0]>
+2023-01-13T10:20:16.313427+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 380.0]>
+2023-01-13T10:20:16.603580+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 385.0]>
+2023-01-13T10:20:17.506860+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 382.0]>
+2023-01-13T10:20:17.904477+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 393.0]>
+2023-01-13T10:20:18.137216+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 395.0]>
+2023-01-13T10:20:18.764523+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 391.0]>
+2023-01-13T10:20:19.277174+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 398.0]>
+2023-01-13T10:20:19.396383+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 404.0]>
+2023-01-13T10:20:19.524962+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 400.0]>
+2023-01-13T10:20:19.939164+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 402.0]>
+2023-01-13T10:20:20.068247+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 395.0]>
+2023-01-13T10:20:20.293300+0100	| DEBUG	| run_mission.py:do_mast_recognition:209 	- Mast recognition disabled while returning or taking off.>
+2023-01-13T10:20:20.372181+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 391.0]>
+2023-01-13T10:20:20.713316+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 386.0]>
+2023-01-13T10:20:21.090463+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 382.0]>
+2023-01-13T10:20:21.418290+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 379.0]>
+2023-01-13T10:20:21.640146+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 378.0]>
+2023-01-13T10:20:22.246302+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 385.0]>
+2023-01-13T10:20:22.736625+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 375.0]>
+2023-01-13T10:20:22.868143+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 387.0]>
+2023-01-13T10:20:23.578143+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 388.0]>
+2023-01-13T10:20:23.804649+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 379.0]>
+2023-01-13T10:20:24.307395+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 380.0]>
+2023-01-13T10:20:24.720540+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 367.0]>
+2023-01-13T10:20:25.139705+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 341.0]>
+2023-01-13T10:20:25.294882+0100	| DEBUG	| run_mission.py:do_mast_recognition:209 	- Mast recognition disabled while returning or taking off.>
+2023-01-13T10:20:25.565449+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 309.0]>
+2023-01-13T10:20:25.856467+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 306.0]>
+2023-01-13T10:20:26.618179+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 299.0]>
+2023-01-13T10:20:27.146261+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 298.0]>
+2023-01-13T10:20:27.543284+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 297.0]>
+2023-01-13T10:20:27.864513+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 297.0]>
+2023-01-13T10:20:28.031821+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 300.0]>
+2023-01-13T10:20:28.478078+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 299.0]>
+2023-01-13T10:20:28.793732+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 291.0]>
+2023-01-13T10:20:29.279097+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 283.0]>
+2023-01-13T10:20:29.386779+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 272.0]>
+2023-01-13T10:20:30.166716+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 261.0]>
+2023-01-13T10:20:30.297645+0100	| DEBUG	| run_mission.py:do_mast_recognition:209 	- Mast recognition disabled while returning or taking off.>
+2023-01-13T10:20:30.607700+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 249.0]>
+2023-01-13T10:20:31.223020+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 225.0]>
+2023-01-13T10:20:31.746366+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 214.0]>
+2023-01-13T10:20:32.175391+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 195.0]>
+2023-01-13T10:20:32.872436+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 179.0]>
+2023-01-13T10:20:33.292709+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 164.0]>
+2023-01-13T10:20:34.385493+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 149.0]>
+2023-01-13T10:20:34.810814+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 131.0]>
+2023-01-13T10:20:34.937406+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 74.0]>
+2023-01-13T10:20:35.086679+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 58.0]>
+2023-01-13T10:20:35.291560+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 79.0]>
+2023-01-13T10:20:35.300015+0100	| DEBUG	| run_mission.py:do_mast_recognition:209 	- Mast recognition disabled while returning or taking off.>
+2023-01-13T10:20:35.785852+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 133.0]>
+2023-01-13T10:20:36.467556+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 218.0]>
+2023-01-13T10:20:36.936079+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 269.0]>
+2023-01-13T10:20:37.229791+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 266.0]>
+2023-01-13T10:20:37.419979+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 257.0]>
+2023-01-13T10:20:37.993014+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 256.0]>
+2023-01-13T10:20:38.771731+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 258.0]>
+2023-01-13T10:20:39.285145+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 261.0]>
+2023-01-13T10:20:39.507760+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 265.0]>
+2023-01-13T10:20:40.302700+0100	| DEBUG	| run_mission.py:do_mast_recognition:209 	- Mast recognition disabled while returning or taking off.>
+2023-01-13T10:20:40.393771+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 272.0]>
+2023-01-13T10:20:40.909680+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 274.0]>
+2023-01-13T10:20:41.612559+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 274.0]>
+2023-01-13T10:20:41.830480+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 271.0]>
+2023-01-13T10:20:42.030884+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 269.0]>
+2023-01-13T10:20:42.209842+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 266.0]>
+2023-01-13T10:20:42.800284+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 266.0]>
+2023-01-13T10:20:42.877073+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 263.0]>
+2023-01-13T10:20:43.164869+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 261.0]>
+2023-01-13T10:20:44.055504+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 260.0]>
+2023-01-13T10:20:44.459860+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 257.0]>
+2023-01-13T10:20:45.055457+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 259.0]>
+2023-01-13T10:20:45.304719+0100	| DEBUG	| run_mission.py:do_mast_recognition:209 	- Mast recognition disabled while returning or taking off.>
+2023-01-13T10:20:45.547969+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 265.0]>
+2023-01-13T10:20:46.536611+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 240.0]>
+2023-01-13T10:20:46.741613+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 256.0]>
+2023-01-13T10:20:47.130824+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 228.0]>
+2023-01-13T10:20:47.613273+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 235.0]>
+2023-01-13T10:20:47.915256+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 227.0]>
+2023-01-13T10:20:48.501170+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 219.0]>
+2023-01-13T10:20:48.904894+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 209.0]>
+2023-01-13T10:20:49.494611+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 201.0]>
+2023-01-13T10:20:49.779909+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 173.0]>
+2023-01-13T10:20:50.090717+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 146.0]>
+2023-01-13T10:20:50.307462+0100	| DEBUG	| run_mission.py:do_mast_recognition:209 	- Mast recognition disabled while returning or taking off.>
+2023-01-13T10:20:50.580143+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 138.0]>
+2023-01-13T10:20:51.077505+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 123.0]>
+2023-01-13T10:20:51.548378+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 117.0]>
+2023-01-13T10:20:51.860390+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 120.0]>
+2023-01-13T10:20:52.281125+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 47.0]>
+2023-01-13T10:20:52.580179+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 50.0]>
+2023-01-13T10:20:52.963745+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 74.0]>
+2023-01-13T10:20:53.139132+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 145.0]>
+2023-01-13T10:20:53.717788+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 260.0]>
+2023-01-13T10:20:54.038283+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 308.0]>
+2023-01-13T10:20:55.134921+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 298.0]>
+2023-01-13T10:20:55.310416+0100	| DEBUG	| run_mission.py:do_mast_recognition:209 	- Mast recognition disabled while returning or taking off.>
+2023-01-13T10:20:55.639248+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 281.0]>
+2023-01-13T10:20:56.526215+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 276.0]>
+2023-01-13T10:20:57.215322+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 277.0]>
+2023-01-13T10:20:57.824754+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 284.0]>
+2023-01-13T10:20:58.422124+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 266.0]>
+2023-01-13T10:20:59.020508+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 296.0]>
+2023-01-13T10:20:59.615751+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 291.0]>
+2023-01-13T10:21:00.219153+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 284.0]>
+2023-01-13T10:21:00.312420+0100	| DEBUG	| run_mission.py:do_mast_recognition:209 	- Mast recognition disabled while returning or taking off.>
+2023-01-13T10:21:00.837884+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 279.0]>
+2023-01-13T10:21:01.031631+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 272.0]>
+2023-01-13T10:21:01.213141+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 267.0]>
+2023-01-13T10:21:01.646036+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 262.0]>
+2023-01-13T10:21:02.309152+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 258.0]>
+2023-01-13T10:21:02.461807+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 252.0]>
+2023-01-13T10:21:02.876323+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 247.0]>
+2023-01-13T10:21:03.331181+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 242.0]>
+2023-01-13T10:21:03.529772+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 237.0]>
+2023-01-13T10:21:04.230763+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 222.0]>
+2023-01-13T10:21:04.464110+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 240.0]>
+2023-01-13T10:21:04.649945+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 236.0]>
+2023-01-13T10:21:05.314843+0100	| DEBUG	| run_mission.py:do_mast_recognition:209 	- Mast recognition disabled while returning or taking off.>
+2023-01-13T10:21:05.342337+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 226.0]>
+2023-01-13T10:21:05.834373+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 180.0]>
+2023-01-13T10:21:06.134368+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 149.0]>
+2023-01-13T10:21:06.358373+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 125.0]>
+2023-01-13T10:21:06.964586+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 112.0]>
+2023-01-13T10:21:07.461880+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 104.0]>
+2023-01-13T10:21:08.066959+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 48.0]>
+2023-01-13T10:21:08.794188+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 37.0]>
+2023-01-13T10:21:09.880903+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 48.0]>
+2023-01-13T10:21:10.268634+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 102.0]>
+2023-01-13T10:21:10.315972+0100	| DEBUG	| run_mission.py:do_mast_recognition:209 	- Mast recognition disabled while returning or taking off.>
+2023-01-13T10:21:10.803574+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 130.0]>
+2023-01-13T10:21:11.128446+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 76.0]>
+2023-01-13T10:21:11.578079+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 68.0]>
+2023-01-13T10:21:12.282795+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 115.0]>
+2023-01-13T10:21:12.656239+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 213.0]>
+2023-01-13T10:21:13.204107+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 285.0]>
+2023-01-13T10:21:13.341030+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 312.0]>
+2023-01-13T10:21:13.483385+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 319.0]>
+2023-01-13T10:21:13.797067+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 326.0]>
+2023-01-13T10:21:14.215236+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 329.0]>
+2023-01-13T10:21:14.510734+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 329.0]>
+2023-01-13T10:21:15.021274+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 324.0]>
+2023-01-13T10:21:15.226777+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 325.0]>
+2023-01-13T10:21:15.317467+0100	| DEBUG	| run_mission.py:do_mast_recognition:209 	- Mast recognition disabled while returning or taking off.>
+2023-01-13T10:21:15.862063+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 330.0]>
+2023-01-13T10:21:16.469055+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 341.0]>
+2023-01-13T10:21:17.261063+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 343.0]>
+2023-01-13T10:21:17.773238+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 343.0]>
+2023-01-13T10:21:18.264390+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 339.0]>
+2023-01-13T10:21:18.478440+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 333.0]>
+2023-01-13T10:21:19.366053+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 324.0]>
+2023-01-13T10:21:19.840648+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 316.0]>
+2023-01-13T10:21:20.117601+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 311.0]>
+2023-01-13T10:21:20.319276+0100	| DEBUG	| run_mission.py:do_mast_recognition:209 	- Mast recognition disabled while returning or taking off.>
+2023-01-13T10:21:20.499141+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 305.0]>
+2023-01-13T10:21:20.794023+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 299.0]>
+2023-01-13T10:21:21.190144+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 293.0]>
+2023-01-13T10:21:21.422459+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 296.0]>
+2023-01-13T10:21:22.133962+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 306.0]>
+2023-01-13T10:21:22.539889+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 305.0]>
+2023-01-13T10:21:22.980733+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 296.0]>
+2023-01-13T10:21:23.190547+0100	| DEBUG	| run_mission.py:monitor_distance:164 	- Distance from sensor: DistanceSensor: [minimum_distance_m: 1.0, maximum_distance_m: 500.0, current_distance_m: 282.0]>

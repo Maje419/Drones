@@ -19,7 +19,7 @@ from os.path import dirname, realpath
 # Image stuff
 from PIL import Image
 
-MAST_HEIGHT = 30  # Relative height of old mast to starting position of drone (meters)
+MAST_HEIGHT = 5  # Relative height of old mast to starting position of drone (meters)
 ACCEPTANCE_RADIUS = 5  # How close should the drone be to the mast before the mission is a success (meters)
 
 video = Video()
@@ -30,6 +30,7 @@ time_start = time.time()
 obstacle_avoidance_triggered = threading.Event()
 has_found_mast = threading.Event()
 is_returning = threading.Event()
+mast_height_altitude_reached = threading.Event()
 
 
 async def run(entry_point: Tuple[float, float]):
@@ -63,10 +64,12 @@ async def run(entry_point: Tuple[float, float]):
     # Start parallel tasks
     monitor_distance_task = asyncio.ensure_future(monitor_distance(drone))
     do_mast_recognition_task = asyncio.ensure_future(do_mast_recognition())
+    monitor_altitude_task = asyncio.ensure_future(monitor_altitude(drone))
 
     running_tasks = [
         monitor_distance_task,
         do_mast_recognition_task,
+        monitor_altitude_task,
     ]
 
     mission_items = []
@@ -156,14 +159,33 @@ async def run(entry_point: Tuple[float, float]):
 
 
 async def monitor_distance(drone: System):
+    logger.debug("Distance monitoring enabled")
     async for distance in drone.telemetry.distance_sensor():
-        logger.debug("Distance from sensor: " + distance)
+        logger.debug(f"Distance from sensor: {distance}")
         if (
-            distance.current_distance_m < 250
+            # For some reason, the documentation is in meters,
+            # but the data we get is certainly not meters.
+            # Therefore, 400 meters here does not equal 400 meters in Gazebo.
+            distance.current_distance_m < 400
+            and mast_height_altitude_reached.is_set()
+            and not is_returning.set()
             and not await drone.mission.is_mission_finished()
         ):
             obstacle_avoidance_triggered.set()
             logger.info(f"Obstacle identified, line of sight cannot be confirmed.")
+    logger.debug("Distance monitoring disabled")
+
+
+@logger.catch
+async def monitor_altitude(drone: System):
+    logger.debug("Altitude monitoring enabled")
+    async for pos in drone.telemetry.position():
+        logger.debug(f"Drone altitude: {pos.relative_altitude_m}")
+        # Add 2 meters to account for sensor data not always being percise.
+        if pos.relative_altitude_m + 2 > MAST_HEIGHT:
+            mast_height_altitude_reached.set()
+            logger.info("Mission altitude reached.")
+            return
 
 
 async def do_mast_recognition():
@@ -171,7 +193,7 @@ async def do_mast_recognition():
     logger.debug("Mast recognition called")
     logger.debug("Has Found Mast: " + str(has_found_mast.is_set()))
     while not has_found_mast.is_set():
-        if not is_returning.is_set():
+        if not is_returning.is_set() and mast_height_altitude_reached.is_set():
             # Capture image every 5 seconds to analyze
             logger.info("Taking image")
             img = None
@@ -190,7 +212,7 @@ async def do_mast_recognition():
             logger.debug("Mast-check completed.")
             i += 1
         else:
-            logger.debug("Mast recognition disabled while returning.")
+            logger.debug("Mast recognition disabled while returning or taking off.")
         await asyncio.sleep(5)
     logger.debug("Exiting mast recognition task")
 
@@ -199,7 +221,7 @@ async def do_mast_recognition():
 def image_contains_mast(im):
     if (
         time.time() - time_start
-    ) > 120:  # Cheat, and show the camera a picture of a balloon/mast
+    ) > 200:  # Cheat, and show the camera a picture of a balloon/mast
         im = img_to_array(Image.open("../data/balloon.jpg").resize((224, 224)))
     logger.debug("image_contains_mast called")
     image = im.reshape((1, im.shape[0], im.shape[1], im.shape[2]))

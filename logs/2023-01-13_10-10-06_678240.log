@@ -1,0 +1,12 @@
+2023-01-13T10:10:13.679931+0100	| INFO	| run_mission.py:run:44 	- Waiting for drone to connect...>
+2023-01-13T10:10:13.696150+0100	| INFO	| run_mission.py:run:47 	- Connected to drone!>
+2023-01-13T10:10:13.698025+0100	| INFO	| run_mission.py:run:50 	- Waiting for drone to have a global position estimate...>
+2023-01-13T10:10:23.628619+0100	| INFO	| run_mission.py:run:53 	- Global position estimate OK>
+2023-01-13T10:10:23.722963+0100	| INFO	| run_mission.py:run:61 	- Arming>
+2023-01-13T10:10:23.867587+0100	| DEBUG	| run_mission.py:monitor_distance:162 	- Distance monitoring enabled>
+2023-01-13T10:10:23.870241+0100	| DEBUG	| run_mission.py:do_mast_recognition:182 	- Mast recognition called>
+2023-01-13T10:10:23.870682+0100	| DEBUG	| run_mission.py:do_mast_recognition:183 	- Has Found Mast: False>
+2023-01-13T10:10:23.870837+0100	| INFO	| run_mission.py:do_mast_recognition:187 	- Taking image>
+2023-01-13T10:10:23.911422+0100	| DEBUG	| run_mission.py:image_contains_mast:215 	- image_contains_mast called>
+2023-01-13T10:10:24.910304+0100	| DEBUG	| run_mission.py:image_contains_mast:221 	- image_contains_mast returned False, confidence: 0.6789669394493103>
+2023-01-13T10:10:24.910659+0100	| DEBUG	| run_mission.py:do_mast_recognition:201 	- Mast-check completed.>

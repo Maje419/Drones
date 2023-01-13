@@ -1,0 +1,97 @@
+2023-01-13T09:32:56.663881+0100	| INFO	| run_mission.py:run:43 	- Waiting for drone to connect...>
+2023-01-13T09:32:56.676401+0100	| INFO	| run_mission.py:run:46 	- Connected to drone!>
+2023-01-13T09:32:56.677146+0100	| INFO	| run_mission.py:run:49 	- Waiting for drone to have a global position estimate...>
+2023-01-13T09:33:06.211653+0100	| INFO	| run_mission.py:run:52 	- Global position estimate OK>
+2023-01-13T09:33:06.291516+0100	| INFO	| run_mission.py:run:60 	- Arming>
+2023-01-13T09:33:06.549638+0100	| INFO	| run_mission.py:run:97 	- Uploading mission 0>
+2023-01-13T09:33:06.552807+0100	| DEBUG	| run_mission.py:do_mast_recognition:171 	- Mast recognition called>
+2023-01-13T09:33:06.553144+0100	| DEBUG	| run_mission.py:do_mast_recognition:172 	- Has Found Mast: False>
+2023-01-13T09:33:06.553342+0100	| INFO	| run_mission.py:do_mast_recognition:176 	- Taking image>
+2023-01-13T09:33:06.625371+0100	| DEBUG	| run_mission.py:image_contains_mast:204 	- image_contains_mast called>
+2023-01-13T09:33:07.997921+0100	| DEBUG	| run_mission.py:image_contains_mast:210 	- image_contains_mast returned False, confidence: 0.36152905225753784>
+2023-01-13T09:33:07.998462+0100	| DEBUG	| run_mission.py:do_mast_recognition:190 	- Mast-check completed.>
+2023-01-13T09:33:08.999929+0100	| INFO	| run_mission.py:run:102 	- Starting mission>
+2023-01-13T09:33:09.034991+0100	| INFO	| run_mission.py:run:105 	- Now checking mast F2542G at 10.554784917159, 55.3743128282325>
+2023-01-13T09:33:13.001240+0100	| INFO	| run_mission.py:do_mast_recognition:176 	- Taking image>
+2023-01-13T09:33:13.013499+0100	| DEBUG	| run_mission.py:image_contains_mast:204 	- image_contains_mast called>
+2023-01-13T09:33:13.495348+0100	| DEBUG	| run_mission.py:image_contains_mast:210 	- image_contains_mast returned False, confidence: 0.5318602323532104>
+2023-01-13T09:33:13.496981+0100	| DEBUG	| run_mission.py:do_mast_recognition:190 	- Mast-check completed.>
+2023-01-13T09:33:18.499855+0100	| INFO	| run_mission.py:do_mast_recognition:176 	- Taking image>
+2023-01-13T09:33:18.508919+0100	| DEBUG	| run_mission.py:image_contains_mast:204 	- image_contains_mast called>
+2023-01-13T09:33:18.906464+0100	| DEBUG	| run_mission.py:image_contains_mast:210 	- image_contains_mast returned False, confidence: 0.5181959867477417>
+2023-01-13T09:33:18.908476+0100	| DEBUG	| run_mission.py:do_mast_recognition:190 	- Mast-check completed.>
+2023-01-13T09:33:23.910917+0100	| INFO	| run_mission.py:do_mast_recognition:176 	- Taking image>
+2023-01-13T09:33:23.926726+0100	| DEBUG	| run_mission.py:image_contains_mast:204 	- image_contains_mast called>
+2023-01-13T09:33:24.312421+0100	| DEBUG	| run_mission.py:image_contains_mast:210 	- image_contains_mast returned False, confidence: 0.5773371458053589>
+2023-01-13T09:33:24.312790+0100	| DEBUG	| run_mission.py:do_mast_recognition:190 	- Mast-check completed.>
+2023-01-13T09:33:29.316017+0100	| INFO	| run_mission.py:do_mast_recognition:176 	- Taking image>
+2023-01-13T09:33:29.327983+0100	| DEBUG	| run_mission.py:image_contains_mast:204 	- image_contains_mast called>
+2023-01-13T09:33:29.861359+0100	| DEBUG	| run_mission.py:image_contains_mast:210 	- image_contains_mast returned False, confidence: 0.42368409037590027>
+2023-01-13T09:33:29.862047+0100	| DEBUG	| run_mission.py:do_mast_recognition:190 	- Mast-check completed.>
+2023-01-13T09:33:34.864216+0100	| INFO	| run_mission.py:do_mast_recognition:176 	- Taking image>
+2023-01-13T09:33:34.878254+0100	| DEBUG	| run_mission.py:image_contains_mast:204 	- image_contains_mast called>
+2023-01-13T09:33:35.256572+0100	| DEBUG	| run_mission.py:image_contains_mast:210 	- image_contains_mast returned False, confidence: 0.24593278765678406>
+2023-01-13T09:33:35.257031+0100	| DEBUG	| run_mission.py:do_mast_recognition:190 	- Mast-check completed.>
+2023-01-13T09:33:40.259111+0100	| INFO	| run_mission.py:do_mast_recognition:176 	- Taking image>
+2023-01-13T09:33:40.269196+0100	| DEBUG	| run_mission.py:image_contains_mast:204 	- image_contains_mast called>
+2023-01-13T09:33:40.817074+0100	| DEBUG	| run_mission.py:image_contains_mast:210 	- image_contains_mast returned False, confidence: 0.5248034596443176>
+2023-01-13T09:33:40.817667+0100	| DEBUG	| run_mission.py:do_mast_recognition:190 	- Mast-check completed.>
+2023-01-13T09:33:45.819874+0100	| INFO	| run_mission.py:do_mast_recognition:176 	- Taking image>
+2023-01-13T09:33:45.830048+0100	| DEBUG	| run_mission.py:image_contains_mast:204 	- image_contains_mast called>
+2023-01-13T09:33:46.296524+0100	| DEBUG	| run_mission.py:image_contains_mast:210 	- image_contains_mast returned False, confidence: 0.2887219488620758>
+2023-01-13T09:33:46.296881+0100	| DEBUG	| run_mission.py:do_mast_recognition:190 	- Mast-check completed.>
+2023-01-13T09:33:51.298916+0100	| INFO	| run_mission.py:do_mast_recognition:176 	- Taking image>
+2023-01-13T09:33:51.311112+0100	| DEBUG	| run_mission.py:image_contains_mast:204 	- image_contains_mast called>
+2023-01-13T09:33:51.785367+0100	| DEBUG	| run_mission.py:image_contains_mast:210 	- image_contains_mast returned False, confidence: 0.5046440958976746>
+2023-01-13T09:33:51.785762+0100	| DEBUG	| run_mission.py:do_mast_recognition:190 	- Mast-check completed.>
+2023-01-13T09:33:56.787710+0100	| INFO	| run_mission.py:do_mast_recognition:176 	- Taking image>
+2023-01-13T09:33:56.801230+0100	| DEBUG	| run_mission.py:image_contains_mast:204 	- image_contains_mast called>
+2023-01-13T09:33:57.261165+0100	| DEBUG	| run_mission.py:image_contains_mast:210 	- image_contains_mast returned False, confidence: 0.31222325563430786>
+2023-01-13T09:33:57.261561+0100	| DEBUG	| run_mission.py:do_mast_recognition:190 	- Mast-check completed.>
+2023-01-13T09:34:02.263902+0100	| INFO	| run_mission.py:do_mast_recognition:176 	- Taking image>
+2023-01-13T09:34:02.277854+0100	| DEBUG	| run_mission.py:image_contains_mast:204 	- image_contains_mast called>
+2023-01-13T09:34:02.891445+0100	| DEBUG	| run_mission.py:image_contains_mast:210 	- image_contains_mast returned False, confidence: 0.4707181453704834>
+2023-01-13T09:34:02.892137+0100	| DEBUG	| run_mission.py:do_mast_recognition:190 	- Mast-check completed.>
+2023-01-13T09:34:07.895046+0100	| INFO	| run_mission.py:do_mast_recognition:176 	- Taking image>
+2023-01-13T09:34:07.907089+0100	| DEBUG	| run_mission.py:image_contains_mast:204 	- image_contains_mast called>
+2023-01-13T09:34:08.426323+0100	| DEBUG	| run_mission.py:image_contains_mast:210 	- image_contains_mast returned False, confidence: 0.5113001465797424>
+2023-01-13T09:34:08.426679+0100	| DEBUG	| run_mission.py:do_mast_recognition:190 	- Mast-check completed.>
+2023-01-13T09:34:13.428060+0100	| INFO	| run_mission.py:do_mast_recognition:176 	- Taking image>
+2023-01-13T09:34:13.441455+0100	| DEBUG	| run_mission.py:image_contains_mast:204 	- image_contains_mast called>
+2023-01-13T09:34:13.959656+0100	| DEBUG	| run_mission.py:image_contains_mast:210 	- image_contains_mast returned False, confidence: 0.4792749285697937>
+2023-01-13T09:34:13.960493+0100	| DEBUG	| run_mission.py:do_mast_recognition:190 	- Mast-check completed.>
+2023-01-13T09:34:18.962570+0100	| INFO	| run_mission.py:do_mast_recognition:176 	- Taking image>
+2023-01-13T09:34:18.974406+0100	| DEBUG	| run_mission.py:image_contains_mast:204 	- image_contains_mast called>
+2023-01-13T09:34:19.360642+0100	| DEBUG	| run_mission.py:image_contains_mast:210 	- image_contains_mast returned False, confidence: 0.22711825370788574>
+2023-01-13T09:34:19.360986+0100	| DEBUG	| run_mission.py:do_mast_recognition:190 	- Mast-check completed.>
+2023-01-13T09:34:24.363078+0100	| INFO	| run_mission.py:do_mast_recognition:176 	- Taking image>
+2023-01-13T09:34:24.377502+0100	| DEBUG	| run_mission.py:image_contains_mast:204 	- image_contains_mast called>
+2023-01-13T09:34:24.888222+0100	| DEBUG	| run_mission.py:image_contains_mast:210 	- image_contains_mast returned False, confidence: 0.23305614292621613>
+2023-01-13T09:34:24.888590+0100	| DEBUG	| run_mission.py:do_mast_recognition:190 	- Mast-check completed.>
+2023-01-13T09:34:29.891305+0100	| INFO	| run_mission.py:do_mast_recognition:176 	- Taking image>
+2023-01-13T09:34:29.901032+0100	| DEBUG	| run_mission.py:image_contains_mast:204 	- image_contains_mast called>
+2023-01-13T09:34:30.289180+0100	| DEBUG	| run_mission.py:image_contains_mast:210 	- image_contains_mast returned False, confidence: 0.4204477071762085>
+2023-01-13T09:34:30.289531+0100	| DEBUG	| run_mission.py:do_mast_recognition:190 	- Mast-check completed.>
+2023-01-13T09:34:35.290850+0100	| INFO	| run_mission.py:do_mast_recognition:176 	- Taking image>
+2023-01-13T09:34:35.299011+0100	| DEBUG	| run_mission.py:image_contains_mast:204 	- image_contains_mast called>
+2023-01-13T09:34:35.728310+0100	| DEBUG	| run_mission.py:image_contains_mast:210 	- image_contains_mast returned False, confidence: 0.10678155720233917>
+2023-01-13T09:34:35.728663+0100	| DEBUG	| run_mission.py:do_mast_recognition:190 	- Mast-check completed.>
+2023-01-13T09:34:40.731081+0100	| INFO	| run_mission.py:do_mast_recognition:176 	- Taking image>
+2023-01-13T09:34:40.739451+0100	| DEBUG	| run_mission.py:image_contains_mast:204 	- image_contains_mast called>
+2023-01-13T09:34:41.189414+0100	| DEBUG	| run_mission.py:image_contains_mast:210 	- image_contains_mast returned False, confidence: 0.2165449559688568>
+2023-01-13T09:34:41.189753+0100	| DEBUG	| run_mission.py:do_mast_recognition:190 	- Mast-check completed.>
+2023-01-13T09:34:46.192476+0100	| INFO	| run_mission.py:do_mast_recognition:176 	- Taking image>
+2023-01-13T09:34:46.200329+0100	| DEBUG	| run_mission.py:image_contains_mast:204 	- image_contains_mast called>
+2023-01-13T09:34:46.657582+0100	| DEBUG	| run_mission.py:image_contains_mast:210 	- image_contains_mast returned False, confidence: 0.34937018156051636>
+2023-01-13T09:34:46.658143+0100	| DEBUG	| run_mission.py:do_mast_recognition:190 	- Mast-check completed.>
+2023-01-13T09:34:51.660367+0100	| INFO	| run_mission.py:do_mast_recognition:176 	- Taking image>
+2023-01-13T09:34:51.673601+0100	| DEBUG	| run_mission.py:image_contains_mast:204 	- image_contains_mast called>
+2023-01-13T09:34:52.176925+0100	| DEBUG	| run_mission.py:image_contains_mast:210 	- image_contains_mast returned False, confidence: 0.08924051374197006>
+2023-01-13T09:34:52.177929+0100	| DEBUG	| run_mission.py:do_mast_recognition:190 	- Mast-check completed.>
+2023-01-13T09:34:57.180426+0100	| INFO	| run_mission.py:do_mast_recognition:176 	- Taking image>
+2023-01-13T09:34:57.255044+0100	| DEBUG	| run_mission.py:image_contains_mast:204 	- image_contains_mast called>
+2023-01-13T09:34:57.795131+0100	| DEBUG	| run_mission.py:image_contains_mast:210 	- image_contains_mast returned True, confidence: 0.9999583959579468>
+2023-01-13T09:34:57.795886+0100	| INFO	| run_mission.py:do_mast_recognition:189 	- Mast found! Returning to base.>
+2023-01-13T09:34:57.796586+0100	| DEBUG	| run_mission.py:do_mast_recognition:190 	- Mast-check completed.>
+2023-01-13T09:34:57.797399+0100	| INFO	| run_mission.py:run:117 	- Returning to base>
+2023-01-13T09:35:02.800003+0100	| DEBUG	| run_mission.py:do_mast_recognition:195 	- Exiting mast recognition task>
